@@ -25,6 +25,14 @@ body {
   }
 }
 
+@media (max-width: 767px) and (orientation: portrait) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 200px);
+    max-width: 90%;
+  }
+}
+
 .item {
   padding: 20px;
   text-align: center;
