@@ -18,6 +18,13 @@ body {
   row-gap: 20px;
 }
 
+@media (max-width: 767px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 200px);
+  }
+}
+
 .item {
   padding: 20px;
   text-align: center;
@@ -25,16 +32,15 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: transform 0.3s ease;
-  display: flex; 
-  justify-content: center; 
-  align-items: center; 
-  flex-direction: column; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
- 
- .item:hover {
+
+.item:hover {
   transform: scale(1.05);
- }
- 
+}
  .text {
   margin: 0;
  }
