@@ -1,0 +1,143 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 390px);
+  grid-template-rows: repeat(2, 200px);
+  grid-gap: 20px;
+  justify-content: center;
+  row-gap: 20px;
+}
+
+.item {
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  flex-direction: column; 
+}
+ 
+ .item:hover {
+  transform: scale(1.05);
+ }
+ 
+ .text {
+  margin: 0;
+ }
+ 
+ .teal {
+  background-color: rgba(180, 180, 180, 0.185);
+ }
+ 
+ .pink {
+  background-color: rgba(255, 220, 225, 0.521);
+ }
+ 
+ .white {
+  background-color: rgb(231, 234, 255);
+ }
+ 
+ .purple {
+  background-color: rgba(226, 255, 223, 0.644);
+ }
+ 
+ .bold-black {
+  font-weight: bold;
+  color: black;
+ }
+ 
+ .popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.5);
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  max-width: 80%;
+  max-height: 80%;
+  overflow: auto;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
+ }
+ 
+ .popup.show {
+  opacity: 1;
+  visibility:visible;
+  transform: translate(-50%, -50%) scale(1);
+ }
+ 
+ .popup-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+ }
+ 
+ .background-circle {
+  position:fixed;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  z-index: 0;
+  opacity:70%;
+  transition: width 0.6s, height 0.6s, border-radius 0.6s, transform 0.5s ease;
+}
+ 
+ .bg-red {
+  background-color: #ff6b6b;
+  top: 20px;
+  left: 20px;
+ }
+ 
+ .bg-blue {
+  background-color: #7596ff;
+  top: 20px;
+  right: 20px;
+ }
+ 
+ .bg-pink {
+  background-color: #ff9bb6;
+  bottom: 20px;
+  right: 20px;
+ }
+ 
+ .bg-violet {
+  background-color: #c49fff;
+  bottom: 20px;
+  left: 20px;
+ }
+ 
+ .expand {
+  width: 200vw;
+  height: 200vh;
+  border-radius: 0;
+ }
+
+ .bold-black{
+  font-size: 23px;
+  font-family: sans-serif;
+ }
+
+ .subtext{
+  font-size: 18px;
+ }
