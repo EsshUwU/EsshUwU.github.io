@@ -41,6 +41,9 @@ const popupContainers = [
         <p>&nbsp;</p>
         <p><strong>CodSoft Artificial Intelligence Internship</strong></p>
         <img src="codsoft.jpg" alt="CodSoft Certificate" style="max-width: 100%; height: auto;">
+        <p>&nbsp;</p>
+        <p><strong>MATLAB Onramp course completion Certificate</strong></p>
+        <img src="matlab.jpg" alt="CodSoft Certificate" style="max-width: 100%; height: auto;">
     `, color: 'violet' },
     { container: contactContainer, content: `
         <p><strong>Let's get in touch!</strong></p>
