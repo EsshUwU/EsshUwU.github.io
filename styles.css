@@ -161,9 +161,9 @@ body {
   .anime1 {
     display: block;
     position: fixed;
-    bottom: 8px; /* Adjust the value to change the distance from the bottom */
-    right: 170px; /* Adjust the value to change the distance from the right */
-    max-width: 300px; /* Adjust the maximum width as needed */
+    bottom: 8px;
+    right: 170px; 
+    max-width: 300px; 
   }
 }
 
