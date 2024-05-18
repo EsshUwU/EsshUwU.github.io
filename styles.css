@@ -2,7 +2,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -155,3 +155,21 @@ body {
  .subtext{
   font-size: 18px;
  }
+
+/* Styles for desktop and larger screens */
+@media (min-width: 768px) {
+  .anime1 {
+    display: block;
+    position: fixed;
+    bottom: 8px; /* Adjust the value to change the distance from the bottom */
+    right: 170px; /* Adjust the value to change the distance from the right */
+    max-width: 300px; /* Adjust the maximum width as needed */
+  }
+}
+
+/* Styles for mobile devices */
+@media (max-width: 767px) {
+  .anime1 {
+    display: none;
+  }
+}
