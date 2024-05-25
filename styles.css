@@ -239,3 +239,31 @@ body {
 }
 
 
+.popup::-webkit-scrollbar {
+  width: 8px; 
+}
+
+.popup::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+  border-radius: 10px; 
+}
+
+.popup::-webkit-scrollbar-thumb {
+  background: #cccccc;
+  border-radius: 10px; 
+  border: 2px solid #f1f1f1; 
+}
+
+.popup::-webkit-scrollbar-thumb:hover {
+  background: #aaaaaa; 
+}
+
+.popup::-webkit-scrollbar-corner,
+.popup::-webkit-scrollbar-button {
+  display: none;
+}
+
+.popup {
+  scrollbar-width: thin;
+  scrollbar-color: #cccccc #f1f1f1;
+}
