@@ -22,6 +22,10 @@ body {
   transition: transform 0.07s ease; 
 }
 
+.container:hover > :not(:hover){
+  opacity: 0.4;
+}
+
 @media (max-width: 767px) {
   .container {
       grid-template-columns: 1fr;
@@ -62,23 +66,31 @@ body {
 .teal {
   background-color: rgb(121, 164, 255);
   opacity: 90%;
+  transition: opacity 0.5s ease;
+
 }
 
 .pink {
   background-color: rgb(171, 194, 255);
   opacity: 90%;
+  transition: opacity 0.5s ease;
+
 
 }
 
 .white {
   background-color: rgb(168, 206, 255);
   opacity: 90%;
+  transition: opacity 0.5s ease;
+
 
 }
 
 .purple {
   background-color: rgb(192, 211, 255);
   opacity: 90%;
+  transition: opacity 0.5s ease;
+
 
 }
 
