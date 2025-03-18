@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <p><strong>Hi there! 👋</strong></p>
                 <p><strong>I'm Esshwar</strong></p>
                 <p>You can call me Essh :)</p>
-                <p>I'm a 19-year-old developer from India. Specialize in Python. I love to discover AI, machine learning tools and working with them to create an impactful products.</p>
+                <p>I'm a 19-year-old developer from India. Specialize in Python. I love to discover AI, machine learning tools and working with them to create impactful products.</p>
                 <p>&nbsp;</p>
                 <p><strong>Skills</strong></p>
                 <p>My current skills involve using programming languages such as Python, C, HTML, JavaScript (beginner), etc.</p>
@@ -35,11 +35,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 <p>Project link: <a href="https://github.com/EsshUwU/SakuraNeN.ai" target="_blank">https://github.com/EsshUwU/SakuraNeN.ai</a></p>
                 <p>&nbsp;</p>
                 <p><strong>Face Detection AI</strong></p>
-                <p>Implemented a Gradio interface for both image and video inference using a pre-trained YOLO model (YOLOv8) for face detection, allowing users to upload images or videos and adjust the confidence threshold for detection. It classifies the detected face as Male or Female with great accuracy, the training data has been aquired from Roboflow and Fine-tuned on Google Colab with Tesla T4 GPU.</p>
+                <p>Implemented a Gradio interface for both image and video inference using a pre-trained YOLO model (YOLOv8) for face detection, allowing users to upload images or videos and adjust the confidence threshold for detection. It classifies the detected face as Male or Female with great accuracy, the training data has been acquired from Roboflow and fine-tuned on Google Colab with a Tesla T4 GPU.</p>
                 <p>Project link: <a href="https://github.com/EsshUwU/codsoft/tree/master/face_detection" target="_blank">https://github.com/EsshUwU/codsoft/tree/master/face_detection</a></p>
                 <p>&nbsp;</p>
                 <p><strong>Machine Learning Models</strong></p>
-                <p>Trained LoRA models for generative AI applications such as Stable Diffusion and RVC Voice etc.</p>
+                <p>Trained LoRA models for generative AI applications such as Stable Diffusion and RVC Voice, etc.</p>
+                <p>&nbsp;</p>
+                <p><strong>YOLO Object Tracking</strong></p>
+                <p>A real-time object tracking system using the YOLO model for efficient object detection and tracking in videos.</p>
+                <p>Project link: <a href="https://github.com/EsshUwU/yolo_tracking" target="_blank">https://github.com/EsshUwU/yolo_tracking</a></p>
             `,
             color: 'blue'
         },
@@ -48,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
             content: `
                 <p><strong>Certifications That I went through!</strong></p>
                 <p>&nbsp;</p>
-                <p><strong>Introduction to Machine Learning NPTEL course by IIT KGP (removed face) </strong></p>
+                <p><strong>Introduction to Machine Learning NPTEL course by IIT KGP (removed face)</strong></p>
                 <img src="nptel.jpg" alt="NPTEL Certificate" style="max-width: 100%; height: auto;">
                 <p>&nbsp;</p>
                 <p><strong>CodSoft Artificial Intelligence Internship</strong></p>
@@ -63,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
             container: contactContainer,
             content: `
                 <p><strong>Let's get in touch!</strong></p>
-                <p>I love meeting new people from around the world! Hit me up to talk about project ideas, Programming, Python, AI, Or just say "Hi" and we'll find something we enjoy talking about. You can find me through any of the platform listed below.</p>
+                <p>I love meeting new people from around the world! Hit me up to talk about project ideas, Programming, Python, AI, or just say "Hi" and we'll find something we enjoy talking about. You can find me through any of the platforms listed below.</p>
                 <p>&nbsp;</p>
                 <p><a href="https://www.linkedin.com/in/esshwar-jay-b124b4260/" target="_blank">LinkedIn</a></p>
                 <p><a href="https://github.com/EsshUwU" target="_blank">GitHub</a></p>
@@ -124,13 +128,6 @@ document.addEventListener('DOMContentLoaded', () => {
         window.addEventListener('click', (event) => {
             if (event.target === popupContainer) {
                 popupContainer.classList.remove('show');
-                popupContainer.style.transform = 'translate(-50%, -50%) scale(1)';
-                popupContainer.style.opacity = '1';
-                requestAnimationFrame(() => {
-                    popupContainer.style.transform = 'translate(-50%, -50%) scale(0.5)';
-                    popupContainer.style.opacity = '0';
-                });
-                circle.classList.remove('expand');
                 setTimeout(() => {
                     popupContainer.remove();
                 }, 300);
@@ -143,9 +140,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const { innerWidth, innerHeight } = window;
         const offsetX = (clientX / innerWidth) - 0.5;
         const offsetY = (clientY / innerHeight) - 0.5;
-        const translateX = offsetX * -20; 
-        const translateY = offsetY * -20; 
-
-        container.style.transform = `translate(${translateX}px, ${translateY}px)`;
+        container.style.transform = `translate(${offsetX * -20}px, ${offsetY * -20}px)`;
     });
 });
