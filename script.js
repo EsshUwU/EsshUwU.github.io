@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <span>Hello! I'm Esshwar</span>
                     </div>
                     <p>You can call me <strong>Essh</strong> :)</p>
-                    <p>I'm a 19-year-old developer based in India, specialized in <strong>Python</strong> and <strong>Agentic AI</strong> development. I possess a deep passion for discovering new Artificial Intelligence paradigms, building custom multi-agentic loops from scratch, and designing robust, high-impact software systems.</p>
+                    <p>I'm a 22-year-old developer based in India, specialized in <strong>Python</strong> and <strong>Agentic AI</strong> development. I possess a deep passion for discovering new Artificial Intelligence paradigms, building custom multi-agentic loops from scratch, and designing robust, high-impact software systems.</p>
                     <p>I focus on creating highly-interactive fullstack interfaces and smooth, automated pipelines that bridge complex scientific libraries with fluid user experiences.</p>
                     
                     <div class="modal-section-title mt-4">
