@@ -623,12 +623,15 @@ document.addEventListener('DOMContentLoaded', () => {
         // Clear all dynamic filter elements
         liquidGlassContainer.innerHTML = '';
         
-        // Target all glass cards and compile dynamic glass refraction with 0.8 strength & 1.2px blur
-        const cards = document.querySelectorAll('.glass-card');
-        cards.forEach((card, idx) => {
-            card.classList.add('liquid-glass-active');
-            applyLiquidGlassToElement(card, `liquid-glass-filter-${idx}`, 0.8, 1.2);
-        });
+        // Target all glass cards and compile dynamic glass refraction with 0.8 strength & 1.2px blur.
+        // When the WebGL engine is active it owns the cards, so skip the SVG fallback there.
+        if (!document.body.classList.contains('liquid-glass-webgl')) {
+            const cards = document.querySelectorAll('.glass-card');
+            cards.forEach((card, idx) => {
+                card.classList.add('liquid-glass-active');
+                applyLiquidGlassToElement(card, `liquid-glass-filter-${idx}`, 0.8, 1.2);
+            });
+        }
         
         // Target active popup modal card (if open) and compile dynamic glass refraction with 7.0px blur
         const activePopup = document.querySelector('.popup');
